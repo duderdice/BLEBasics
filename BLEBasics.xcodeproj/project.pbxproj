@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		58BB4BAD1D9E282000CA7006 /* UnitsDefinitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58BB4BAC1D9E282000CA7006 /* UnitsDefinitions.swift */; };
+		58BB4BAF1D9E29B900CA7006 /* NumericTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58BB4BAE1D9E29B900CA7006 /* NumericTypes.swift */; };
 		D209E9921D708AF500B70D75 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D209E9911D708AF500B70D75 /* Images.xcassets */; };
 		D23895221D707CCA00387F36 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23895171D707CCA00387F36 /* AppDelegate.swift */; };
 		D23895231D707CCA00387F36 /* blegaugesicon3.png in Resources */ = {isa = PBXBuildFile; fileRef = D23895181D707CCA00387F36 /* blegaugesicon3.png */; };
@@ -23,6 +25,8 @@
 
 /* Begin PBXFileReference section */
 		317191D11ABA2D5D00BD9A91 /* BLEBasics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BLEBasics.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		58BB4BAC1D9E282000CA7006 /* UnitsDefinitions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnitsDefinitions.swift; sourceTree = "<group>"; };
+		58BB4BAE1D9E29B900CA7006 /* NumericTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumericTypes.swift; sourceTree = "<group>"; };
 		D209E9911D708AF500B70D75 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = BLEBasics/Images.xcassets; sourceTree = SOURCE_ROOT; };
 		D23895171D707CCA00387F36 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = BLEBasics/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
 		D23895181D707CCA00387F36 /* blegaugesicon3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = blegaugesicon3.png; path = BLEBasics/blegaugesicon3.png; sourceTree = SOURCE_ROOT; };
@@ -33,7 +37,7 @@
 		D238951D1D707CCA00387F36 /* PeripheralsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PeripheralsTableViewController.swift; path = BLEBasics/PeripheralsTableViewController.swift; sourceTree = SOURCE_ROOT; };
 		D238951E1D707CCA00387F36 /* PeripheralTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PeripheralTableViewCell.swift; path = BLEBasics/PeripheralTableViewCell.swift; sourceTree = SOURCE_ROOT; };
 		D238951F1D707CCA00387F36 /* PeripheralViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PeripheralViewController.swift; path = BLEBasics/PeripheralViewController.swift; sourceTree = SOURCE_ROOT; };
-		D23895321D707E4800387F36 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
+		D23895321D707E4800387F36 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LaunchScreen.xib; path = ../../../LaunchScreen.xib; sourceTree = "<group>"; };
 		D27A54C11D767A48000A50FD /* bluetooth.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bluetooth.png; path = BLEBasics/bluetooth.png; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -51,9 +55,10 @@
 		317191C81ABA2D5D00BD9A91 = {
 			isa = PBXGroup;
 			children = (
-				D23895321D707E4800387F36 /* LaunchScreen.xib */,
+				58BB4BA91D9E233200CA7006 /* Resources */,
 				317191D31ABA2D5D00BD9A91 /* BLEBasics */,
 				317191D21ABA2D5D00BD9A91 /* Products */,
+				58BB4BA21D9E21D700CA7006 /* Classes */,
 			);
 			sourceTree = "<group>";
 		};
@@ -68,16 +73,8 @@
 		317191D31ABA2D5D00BD9A91 /* BLEBasics */ = {
 			isa = PBXGroup;
 			children = (
-				D27A54C11D767A48000A50FD /* bluetooth.png */,
-				D23895181D707CCA00387F36 /* blegaugesicon3.png */,
-				D23895171D707CCA00387F36 /* AppDelegate.swift */,
-				D23895191D707CCA00387F36 /* CharacteristicTableViewCell.swift */,
-				D238951A1D707CCA00387F36 /* charsTableViewController.swift */,
 				D238951B1D707CCA00387F36 /* Info.plist */,
 				D238951C1D707CCA00387F36 /* Main.storyboard */,
-				D238951D1D707CCA00387F36 /* PeripheralsTableViewController.swift */,
-				D238951E1D707CCA00387F36 /* PeripheralTableViewCell.swift */,
-				D238951F1D707CCA00387F36 /* PeripheralViewController.swift */,
 				D209E9911D708AF500B70D75 /* Images.xcassets */,
 				317191D41ABA2D5D00BD9A91 /* Supporting Files */,
 			);
@@ -90,6 +87,81 @@
 			children = (
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		58BB4BA21D9E21D700CA7006 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				58BB4BA31D9E21D700CA7006 /* AppDelegate */,
+				58BB4BA41D9E21D700CA7006 /* Controllers */,
+				58BB4BA51D9E21D700CA7006 /* Helpers */,
+				58BB4BA61D9E21D700CA7006 /* Models */,
+			);
+			name = Classes;
+			path = BLEBasics/Classes;
+			sourceTree = "<group>";
+		};
+		58BB4BA31D9E21D700CA7006 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				D23895171D707CCA00387F36 /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		58BB4BA41D9E21D700CA7006 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D23895191D707CCA00387F36 /* CharacteristicTableViewCell.swift */,
+				D238951E1D707CCA00387F36 /* PeripheralTableViewCell.swift */,
+				D238951A1D707CCA00387F36 /* charsTableViewController.swift */,
+				D238951D1D707CCA00387F36 /* PeripheralsTableViewController.swift */,
+				D238951F1D707CCA00387F36 /* PeripheralViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		58BB4BA51D9E21D700CA7006 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				58BB4BAC1D9E282000CA7006 /* UnitsDefinitions.swift */,
+				58BB4BAE1D9E29B900CA7006 /* NumericTypes.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		58BB4BA61D9E21D700CA7006 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		58BB4BA91D9E233200CA7006 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				58BB4BAB1D9E238000CA7006 /* NIBs */,
+				58BB4BAA1D9E233200CA7006 /* images */,
+			);
+			name = Resources;
+			path = BLEBasics/Resources;
+			sourceTree = "<group>";
+		};
+		58BB4BAA1D9E233200CA7006 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				D27A54C11D767A48000A50FD /* bluetooth.png */,
+				D23895181D707CCA00387F36 /* blegaugesicon3.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		58BB4BAB1D9E238000CA7006 /* NIBs */ = {
+			isa = PBXGroup;
+			children = (
+				D23895321D707E4800387F36 /* LaunchScreen.xib */,
+			);
+			path = NIBs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +198,7 @@
 					317191D01ABA2D5D00BD9A91 = {
 						CreatedOnToolsVersion = 6.2;
 						DevelopmentTeam = G5P2U4YW5D;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -172,6 +245,8 @@
 				D23895241D707CCA00387F36 /* CharacteristicTableViewCell.swift in Sources */,
 				D23895291D707CCA00387F36 /* PeripheralTableViewCell.swift in Sources */,
 				D238952A1D707CCA00387F36 /* PeripheralViewController.swift in Sources */,
+				58BB4BAD1D9E282000CA7006 /* UnitsDefinitions.swift in Sources */,
+				58BB4BAF1D9E29B900CA7006 /* NumericTypes.swift in Sources */,
 				D23895221D707CCA00387F36 /* AppDelegate.swift in Sources */,
 				D23895281D707CCA00387F36 /* PeripheralsTableViewController.swift in Sources */,
 			);
@@ -273,6 +348,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = me.evtv.blebasics;
 				PRODUCT_NAME = BLEBasics;
 				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -290,6 +366,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = me.evtv.blebasics;
 				PRODUCT_NAME = BLEBasics;
 				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

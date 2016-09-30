@@ -1,6 +1,6 @@
 //
 //  CharacteristicTableViewCell.swift
-//  
+//
 //
 //  Created by Jack Rickard on 7/24/16..
 //  Copyright (c) 2016 Jack Rickard. All rights reserved.
@@ -11,8 +11,6 @@ import CoreBluetooth
 
 class CharacteristicTableViewCell: UITableViewCell
 {
-
-    
     @IBOutlet var ValueEntryField: UITextField!
     @IBOutlet var Unsubscribe: UIButton!
     @IBOutlet var UUID: UILabel!

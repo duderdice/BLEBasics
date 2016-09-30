@@ -1,6 +1,6 @@
 //
 //  PeripheralTableViewCell.swift
-//  
+//
 //
 //  Created by Jack Rickard on 7/24/16.
 //  Copyright (c) 2016 Jack Rickard. All rights reserved.
@@ -11,19 +11,18 @@ import CoreBluetooth
 
 class PeripheralTableViewCell: UITableViewCell
 {
-
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var UUIDLabel: UILabel!
     @IBOutlet weak var RSSILabel: UILabel!
     @IBOutlet weak var connectableLabel: UILabel!
     @IBOutlet weak var otherLabel: UILabel!
     
-    func setupWithPeripheral(peripheral: Peripheral)
-        {
-            nameLabel.text = peripheral.name
-            UUIDLabel.text = peripheral.UUID
-            RSSILabel.text = peripheral.RSSI
-            connectableLabel.text = peripheral.connectable
-              
-        }
+    func setupWithPeripheral(_ peripheral: Peripheral)
+    {
+        nameLabel.text = peripheral.name
+        UUIDLabel.text = peripheral.UUID
+        RSSILabel.text = peripheral.RSSI
+        connectableLabel.text = peripheral.connectable
+        
+    }
 }//end class
